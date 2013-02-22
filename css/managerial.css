@@ -1,0 +1,110 @@
+#signout {
+  float:right;
+}
+.well sidebar-nav {
+  padding: 19px;
+}
+#dashboard_stores {
+  display:inline;
+}
+#analytics_sidebar{
+  height:1000px;
+  background-color:#f5f5f5;
+  border:1px solid #E3E3E3;
+   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.store-list {
+  margin-top:15px;
+  margin-bottom: 0;
+  font-size:13px; 
+}
+.analytics_list {
+  color:#333;
+}
+.welcomeholder {
+  width:85%;
+  display:table;
+  position:relative;
+  padding-top:10px;
+  padding-bottom:20px;
+}
+.welcome {
+  float:left;
+  padding-left:30px;
+  color:#08C;
+}
+.date {
+  height:25px;
+  width:225px;
+  background-color:white;
+  border:2px solid #ddd;
+  font-size:20px;
+  line-height:25px;
+  margin-top:15px;
+  padding-left:10px;
+  float:right;
+  border-radius:4px;
+  cursor:pointer;
+  
+}
+
+.navbar-inner {
+  padding-left:0px;
+}
+#contestbar {
+  margin-bottom:0px;
+}
+.graph_left {
+  height:240px;
+  width:48%;
+  float:left;
+  border:1px solid #ddd;
+}
+.title_box {
+  height:25px;
+  width:100%;
+  border-bottom:1px solid #ddd;
+  background-color:#08C;
+  color:white;
+  cursor:pointer;
+  font-size:15px;
+  line-height:22px;
+}
+.graph_right {
+  height:240px;
+  width:48%;
+  float:right;
+  border:1px solid #ddd;
+}
+.graph_title {
+  text-decoration:none;
+  font-size:15px;
+  line-height:22px;
+  color:white;
+}
+.graph_legend {
+  border-bottom:1px solid #333;
+}
+
+.legend {
+  color:#08C;
+  margin-left:10px;
+  margin-right:10px;
+  cursor:pointer;
+  margin-bottom:0px;
+  display:inline-block;
+}
+#interaction_length {
+  padding-left:10px;
+}
+.span10 {
+  margin-bottom:15px;
+}
+.chartholder {
+  height:77%;
+}
+#routine {
+  margin-left:10px;
+}

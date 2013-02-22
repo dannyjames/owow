@@ -1,0 +1,16 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <ul class="nav pull-right">
+      <li><a ng-click="photo()">photo</a></li>
+      <li><a ng-click="save()">save</a></li>
+    </ul>
+    <ul class="nav">
+      <li><a href="#area/{{ backArea }}">{{ backArea }}</a></li>
+    </ul>
+    <ul class="nav center">
+      <li><a>{{ routine }}</a></li>
+    </ul>
+  </div>
+</div>
+<div><textarea placeholder="Enter workout details" ng-model="text"></textarea></div>
+<div><canvas ng-mousedown="start($event)" ng-mousemove="move($event)" ng-mouseup="end($event)"></canvas></div>

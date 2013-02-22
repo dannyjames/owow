@@ -1,0 +1,25 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <ul class="nav pull-right">
+      <li><a ng-click="edit = !edit">edit</a></li>
+    </ul>
+    <ul class="nav">
+      <li><a href="#">Client Fitness</a></li>
+    </ul>
+    <ul class="nav center">
+      <li><a>{{ area }}</a></li>
+    </ul>
+  </div>
+</div>
+<div ng-show="edit" class="text-right">
+  <button ng-disabled="open" ng-click="add()">+</button><button ng-click="del = !del">-</button>
+</div>
+<ul class="nav nav-tabs nav-stacked">
+  <li ng-repeat="routine in routines">
+    <button class="close delete" ng-show="del" ng-click="delete(routine)">&times;</button>
+    <form ng-hide="routine" ng-submit="submit()" ng-hide="routine">
+      <input ng-model="text" autofocus class="input-block-level" placeholder="routine">
+    </form>
+    <a ng-show="routine" href="#routine/{{routine}}">{{ routine }}</a>
+  </li>
+</ul>

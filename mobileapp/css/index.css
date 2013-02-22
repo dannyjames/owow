@@ -1,0 +1,500 @@
+html, body {
+  height: 100%;
+}
+
+body {
+   background:url(../img/wood_pattern.png)repeat center center;
+   padding-top: 40px;
+}
+
+#credit-card {
+   height:275px;
+   width:525px;
+   margin-top:15%;
+   margin-left:auto;
+   margin-right:auto;
+   margin-bottom:15%;
+   background:url(../img/credit-background.png)repeat center center;
+   border-top-left-radius:20px;
+   border-top-right-radius:20px;
+   border-bottom-left-radius:20px;
+   border-bottom-right-radius:20px;
+   border-top:8px solid black;
+   border-right:8px solid black;
+   border-bottom:8px solid black;
+   border-left:8px solid black;
+}
+.credit-container {
+   padding:20px;
+   position:relative;
+}
+.app-container {
+   padding:20px;
+   position:relative;
+}
+
+#employeeapp {
+   border-top:1px solid white;
+   border-bottom:1px solid #333;
+}
+#topappbar {
+   position:relative;
+   left:325px;
+}
+
+.contest {
+  position: relative;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+  font-weight:bold;
+  clear:both;
+} 
+.holding-circle {
+   height:100px;
+   width:100px;
+   border-radius:50%;
+   background:url(../img/wbig.png)no-repeat center center;
+   z-index:1;
+   border:4px solid #333;
+   position:relative;
+   font-size:22px;
+   text-align:center;
+   background-color:white;
+   display:inline-block;
+   margin-top:5px;
+}
+.currency {
+   position:absolute;
+   margin-left:35%;
+   top:25%;
+   color:#333;
+   font-size:34px; 
+   line-height:42px;
+   margin-left:22%;
+   z-index:2;
+  
+}
+
+.credit-rowleft {
+   float:left;
+   position:relative;
+   display:inline-block;
+   margin-left:25px;
+   padding-left:30px;
+   padding-right:10px;
+}
+.credit-rowright {
+   float:right;
+   position:relative;
+   display:inline-block;
+   margin-right:50px;
+   padding-right:30px;
+   padding-bottom:0px;
+   padding-left:10px;
+}
+
+.creditname {
+   display:block;
+   font-size:16px;
+   line-height:20px;
+   color:silver;
+   text-align:center;
+   margin-bottom:0px;
+}
+.rank-number {
+   font-size:16px;
+   line-height:20px;
+   color:silver;
+
+}
+.earn-currency {
+   margin-left:10px;
+   font-size:25px;
+   line-height:28px;
+   color:silver;
+}
+#center {
+   text-align:center;
+}
+.live-contest {
+   margin-right:10px;
+   font-size:25px;
+   line-height:28px;
+   color:silver;
+}
+.reward_image {
+  display:block;
+  padding-top:50px;
+  padding-bottom:25px;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  right:15px;
+}
+#containergame {
+   width:90%;
+   z-index:1;
+   background-color:#333;
+
+} 
+#startgame {
+   font-size:40px;
+   letter-spacing:1px;
+   cursor:pointer;
+   color:white;
+   text-align:center;
+   margin-bottom:0px;
+}
+.categories {
+   border:1px solid #333;
+   background-color:black;
+   color:white;
+}
+.wows {
+   color:gold;
+}
+.rank {
+   font-weight:bold;
+   font-size:18px;
+   background-image:-webkit-linear-gradient(top, #4BF, #08C);
+}
+.name {
+   width:50%;
+   font-size:18px;
+   background-image:-webkit-linear-gradient(top, #4BF, #08C);
+}
+.points {
+   width:35%;
+   font-size:18px;
+   background-image:-webkit-linear-gradient(top, #4BF, #08C);
+}
+.currency-app{
+  text-align:center;
+   color:white;
+   display:inline-block;
+   font-size:28px;
+   line-height:30px;
+   margin-bottom:0px;
+
+   font-weight:300;
+}
+.center-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.gamerow {
+   font-size:22px;
+   font-weight:bold;
+   line-height:36px;
+   padding-top:5px;
+   padding-right:0px;
+   padding-bottom:20px;
+   padding-left:20px;
+   z-index:2;
+   cursor:pointer;
+}
+
+.table-striped {
+   margin-left:auto;
+   margin-right:auto;
+   background-color:white;
+   z-index:2;
+ }
+ .legend_table {
+   float:left;
+   display:inline;
+   padding-left:15px;
+   margin-top:25px;
+   margin-bottom:25px;
+ }
+.legend_status {
+   font-weight:bold;
+   color:white;
+}
+.gamerank {
+   padding-left:15px;
+}
+.gamename {
+   padding-left:10px;
+}
+.gamepoints {
+   padding-left:30px;
+}
+
+
+
+
+
+body {
+   background: url(../img/wood.jpg) repeat center center;
+}
+
+.center {
+   width:100%;
+   text-align:center;
+   margin-bottom:20px;   
+}
+.img-reward {
+   width:18%;
+   text-align:center;
+   margin-right:20px;
+   position:relative;
+   background-color:white;
+   border:2px solid #333;
+   display:inline-block;
+}
+.wow-description {
+   width:100%;
+   left:0;
+   bottom:0;
+   position:absolute;
+   z-index:2;
+   background:black;
+   color:white;
+   opacity:.75;
+   font-weight:bold;
+   font-size:12px;   
+}
+.display-size {
+   height:200px;
+   display:inline;
+   z-index:2;
+}
+
+@media only screen and (max-device-width: 480px) {
+.credit-container {
+   padding-top:5px;
+   padding-right:25px;
+   padding-bottom:25px;
+   padding-left:25px;
+   position:relative;   
+}
+
+#credit-card {
+   height:135px;
+   width:225px;
+   margin-top:80px;
+   margin-left:auto;
+   margin-right:auto;
+   margin-bottom:100px;
+   background:url(../img/credit-background.png)repeat center center;
+   border-top-left-radius:20px;
+   border-top-right-radius:20px;
+   border-bottom-left-radius:20px;
+   border-bottom-right-radius:20px;
+   border-top:4px solid black;
+   border-right:4px solid black;
+   border-bottom:4px solid black;
+   border-left:4px solid black;
+}
+#startgame {
+   font-size:26px;
+   letter-spacing:0px;
+   cursor:pointer;
+   color:white;
+   text-align:center;
+   padding-top:0px;
+   padding-bottom:0px;
+   margin-top:0px;
+   margin-bottom:0px;
+}
+ .holding-circle {
+   height:60px;
+   width:60px;
+   border-radius:50%;
+   background:url(../img/w.png)no-repeat center center;
+   border:2px solid #333;
+   margin-left:auto;
+   margin-right:auto;
+   margin-bottom:0px;
+   position:relative;
+   font-size:14px;
+   text-align:center;
+   background-color:white;
+}
+.currency {
+   position:absolute;
+   top:20px;
+   color:#333;
+   font-size:20px;
+   font-weight:600; 
+   line-height:25px;
+   margin-top:0px;
+  
+}
+.credit-rowleft {
+   float:left;
+   position:relative;
+   display:inline-block;
+   padding-right:0px;
+   padding-left:0px;
+   margin-left:0px;
+   margin-right:0px;
+}
+.credit-rowright {
+   float:left;
+   position:relative;
+   display:inline-block;
+   padding-left:8px;
+   padding-right:0px;
+   padding-right:0px;
+   margin-right:0px;
+   margin-left:10px;
+}
+.earn-currency {
+   margin-left:0px;
+   margin-right:0px;
+   font-size:16px;
+   line-height:1.05;
+   color:gold;
+   font-weight:600;
+}
+.live-contest {
+   margin-left:0px;
+   margin-right:0px;
+   font-size:16px;
+   line-height:1.05;
+   color:gold;
+   font-weight:600;
+}
+.creditname {
+   display:block;
+   font-size:14px;
+   line-height:16px;
+   color:gold;
+   text-align:center;
+   margin-bottom:0px;
+}
+
+.gamerow {
+   font-size:25px;
+   line-height:35px;
+   font-weight:bold;
+   padding-top:5px;
+   padding-right:0px;
+   padding-bottom:20px;
+   padding-left:20px;
+   z-index:2;
+   cursor:pointer;
+}
+
+ .legend_table {
+   float:left;
+   display:inline;
+   padding-left:15px;
+   margin-top:25px;
+   margin-bottom:25px;
+ }
+.legend_status {
+   font-weight:bold;
+   color:white;
+}
+.gamerank {
+   padding-left:15px;
+   font-size:14px;
+   line-height:20px;
+}
+.gamename{
+   padding-left:15px;
+   font-size:14px;
+   line-height:20px;
+}
+
+.gamepoints {
+   text-align:center;
+   padding-left:50px;
+   font-size:15px;
+   line-height:20px;
+}
+
+
+.center {
+   width:100%;
+   text-align:center;
+   margin-bottom:20px;   
+}
+.img-reward {
+   width:75%;
+   text-align:center;
+   margin-right:10px;
+   margin-bottom:20px;
+   position:relative;
+   background-color:white;
+   border:2px solid #333;
+   display:inline-block;
+}
+.wow-description {
+   width:100%;
+   left:0;
+   bottom:0;
+   position:absolute;
+   z-index:2;
+   background:black;
+   color:white;
+   opacity:.75;
+   font-weight:bold;
+   font-size:12px;   
+}
+.display-size {
+   height:150px;
+   display:inline;
+}
+
+}
+
+#screensaver {
+   font-family: sans-serif;
+   color: #333;
+   position: relative;
+}
+
+.hi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+}
+.myname {
+   font-size:60px;
+   line-height:65px;
+   margin-left:100px;
+   display:inline-block;
+   position:fixed;
+   top:40px;
+}
+.askme {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  font-size: 40px;
+}
+
+body.blank {
+  background: url(../img/betterbackground.png) repeat center center;
+}
+body.blank .navbar {
+  display: none;
+}
+
+.nav.center {
+  float: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.nav.center > li {
+  display: inline-block;
+  float: none;
+}
+
+#bottom-toolbar {
+  min-height: 0;
+  color: white;
+  opacity: 0.95;
+}
+
+#bottom-toolbar a {
+  padding: 7px;
+}

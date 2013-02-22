@@ -1,0 +1,101 @@
+body {
+   background: url(../img/wood.jpg) repeat center center;
+}
+#title {
+   margin-top:10px;
+   margin-bottom:15px;
+   text-align:center;
+}
+
+.currency_rules {
+   margin-top:20px;
+   margin-bottom:20px;
+   text-align:center;
+   font-size:35px;
+   line-height:40px;
+   font-weight:bold;
+   color:white;
+}
+.center {
+   width:100%;
+   text-align:center;
+   margin-bottom:20px;   
+}
+.img-reward {
+   width:18%;
+   text-align:center;
+   margin-right:20px;
+   position:relative;
+   background-color:white;
+   border:2px solid #333;
+   display:inline-block;
+}
+.wow-description {
+   width:100%;
+   left:0;
+   bottom:0;
+   position:absolute;
+   z-index:2;
+   background:black;
+   color:white;
+   opacity:.75;
+   font-weight:bold;
+   font-size:12px;   
+}
+.display-size {
+   height:200px;
+   display:inline;
+   z-index:2;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+#title {
+   margin-top:30px;
+   margin-bottom:10px;
+
+}
+
+.currency_rules {
+   text-align:center;
+   font-size:25px;
+   line-height:30px;
+   font-weight:bold;
+   color:white;
+   margin-top:10px;
+   margin-bottom:10px;
+}
+.center {
+   width:100%;
+   text-align:center;
+   margin-bottom:20px;   
+}
+.img-reward {
+   width:75%;
+   text-align:center;
+   margin-right:10px;
+   margin-bottom:20px;
+   position:relative;
+   background-color:white;
+   border:2px solid #333;
+   display:inline-block;
+}
+.wow-description {
+   width:100%;
+   left:0;
+   bottom:0;
+   position:absolute;
+   z-index:2;
+   background:black;
+   color:white;
+   opacity:.75;
+   font-weight:bold;
+   font-size:12px;   
+}
+.display-size {
+   height:150px;
+   display:inline;
+}
+
+
+}

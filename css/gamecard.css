@@ -1,0 +1,14 @@
+.startstop {
+   clear:both;
+   margin-top:25px;
+   margin-bottom:25px;
+}
+#newAudio {
+   font-size:16px;
+   margin-top:15px;
+   margin-bottom:15px;
+   line-height:1.75;
+}
+.start_box {
+   padding:20px;
+}

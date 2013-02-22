@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>OOwow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The ultimate work game">
+    <meta name="keywords" content="employee, work, game, fun, ultimate,">
+
+
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/docs.css" rel="stylesheet">
+    <link href="./css/employeeleaderboard.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One|Russo+One|Monofett|Monoton|Chewy|Courgette|Gruppo|Oswald' rel='stylesheet' type='text/css'>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    
+  
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+<body class="optimize" data-spy="scroll" data-target=".bs-docs-sidebar">
+
+
+    <!-- Navbar
+    ================================================== -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+         <div class="navbar-inner">
+            <div class="topappbar">
+               <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+               <div class="nav-collapse collapse">
+                  <ul class="nav">
+                     <li class="">
+                        <a href="./index.html">Home</a>
+                     </li>
+                     <li class="">
+                        <a href="./feedback.html">Currency</a>
+                     </li>
+                     <li class="">
+                        <a href="./rules.html">Rewards</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   <div class="app-container">
+      <div class="row-fluid">
+         <div class="span12" id="rules-title">
+            <p class="currency-app" id="rules-size">Earn Currency</p> 
+         </div>
+      </div>
+      <div class="row-fluid">
+         <table class="table table-striped" id="currency-value">
+            <thead class="categories">
+               <tr>
+                  <th class="rank">Interaction</th>
+                  <th class="points">Value</th>
+               </tr>
+            </thead>
+            <tbody>
+                <?php
+                    $con = mysql_connect('localhost:8889', 'root', 'root');
+                    if(!$con){
+                       die('Could not connect: ' . mysql_error($con));
+                    }
+
+                    mysql_select_db('analytics', $con);
+                    if(!$con){
+                       die('Could not connect: ' . mysql_error($con));
+                    }
+                    $select = "SELECT rulescurrency, valuecurrency FROM Currency";
+                    $result = mysql_query($select, $con);
+                    
+                    if(!$result){
+                       die('Error: ' . mysql_errno($con) . ':' . mysql_error($con));
+                    }
+                    
+                    while ($row = mysql_fetch_assoc($result)) {
+                       echo "<tr class ='gamerow' id='gameone'>";
+                       echo "<td>" . $row['rulescurrency'] . "</td>";
+                       echo "<td>" . $row['valuecurrency'] . "</td>";
+                       echo "</tr>";
+                   }
+                ?>
+            </tbody>
+         </table>
+      </div>
+      <div class="row-fluid">
+         <div class="span12" id="contest-title">
+            <p class="currency-app" id="contest-size">Contests</p>
+         </div>
+      </div>
+      <div class="row-fluid">
+         <table class="table table-striped" id="contest-table">
+            <thead class="categories">
+               <tr>
+                  <th class="rank">Contest Details</th>
+                  <th class="points">Value</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="gamerow" id="gameone">
+                  <td class="gamerank">First to have 500 Interactions in a week</td>
+                  <td class="gamepoints">100</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+
+ </body>
+</html>  
+        
+      

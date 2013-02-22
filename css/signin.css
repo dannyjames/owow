@@ -1,0 +1,53 @@
+body {
+   background-color:black;
+}
+
+.form-horizontal {
+   text-align:center;
+   margin-top:200px;
+}
+div.controls {
+   margin-left:0px;
+}
+
+.control-label {
+   color:white;
+}
+.btn {
+   border-color:#333;
+   display:inline;
+   margin-right:11%;
+}
+.btn:hover {
+   color:#333;
+   text-decoration:none;
+   background-color:#4bf;
+   background-position:0px; 
+   -webkit-transition:background-position .1s linear; 
+}
+@media only screen and (max-device-width:480px) {
+
+body {
+   width:400px;
+   background-color:black;
+}
+.form-horizontal {
+   margin-top:200px;
+   margin-left:0px;
+   position:relative;
+}
+div.controls{
+   margin-left:0px;
+}
+.control-label {
+   margin-left:0px;
+   color:white;
+}
+.controls {
+   margin-left:0px;
+}
+.btn {
+   border-color:#333;
+   display:inline;
+   margin-left:0px;
+}

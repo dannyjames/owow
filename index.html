@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>OWOW</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Advanced People Analytics">
+    <meta name="keywords" content="people analytics, in store, mobile analytics,contextual applications">
+
+
+    <link href="./css/bootstrap.css" rel="stylesheet" >
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet" >
+    <link href="./css/docs.css" rel="stylesheet" >
+    <link href="../js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   <script src="/js/jquery.js"></script>
+   <script>
+      $(document).ready(function() {
+         $("#sign_in").click(function() {
+            if($("#inputPassword").val().length < 6) {
+               alert("Password is too short");
+            }
+            if($("#inputEmail").val().length == 0 || $("#inputEmail").val().indexOf("@") == -1) {
+               alert("Please put in a valid email address");
+            }
+            alert($("#inputEmail").val());
+         });
+      });
+   </script>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+  </head>
+
+  <body class="optimize" data-spy="scroll" data-target=".bs-docs-sidebar">
+
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <div>
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">OWOW</a>
+              </li>
+              <li class="size">
+                <a class="linksize" href="./requestinvite.html">Request Invite</a>
+              </li>
+              <li class="size">
+                <a class="linksize" href="#pareto">Pareto Principle</a>
+              </li>
+              <li class="size">
+                <a class="linksize" href="#owow">ABI</a>
+              </li>
+              <li class="smallhidden">
+                <a class="linksize" href="#gtg">Greatness Game</a>
+              </li>
+            </ul>
+            <ul class="nav" id="top-signin">
+               <li class="right">
+                  <form class="form-inline" method="post" action="login.php">
+                     <input type="text" class="owow-enter" name="myusername" placeholder="Email">
+                     <input type="password" class="owow-enter" name="mypassword" placeholder="Password">
+                     <input type="submit" class="btn btn-primary" id="top-login" value="Login">
+                  </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="jumbotron masthead">
+   <div class="row">
+      <div class="span4 offset1">
+         <img src="./img/ipodhome.png" id="ipod">
+      </div>
+      <div class="span7 pagination-centered">
+         <h1><span class="owow">O</span>WOW</h1></br>
+         <h2 id="description">Powerful people analytics to develop highly skilled and motivated employees.</h2>
+      </div>
+   </div>
+</div>
+
+
+   <div class="row-fluid marketing" id="backgroundone">
+      <h1 class="midwhite">Why <span id="why">oWOW!</span></h1>
+      <p class="marketing-byline midwhite">Our goal is to end mediocrity across the world through data and games.</p>
+      <hr class="soften" id="pareto">
+   </div>
+<div class="container">
+   <div class="marketing">
+      <div class="row-fluid">
+         <div class="span5 offset1">
+            <img src="./img/jordan.png">
+         </div>
+         <div class="span5">
+            <h2>Pareto Principle</h2>
+            <p class="bodytext">20% of your organization are superstars doing 80% of the work.  Why do we need to be content with these numbers?</p>
+         </div> 
+      </div> 
+      <hr class="soften" id="owow">
+      <div class="row-fluid">
+         <div class="span5 offset1" id="marginleft">
+           <h2>Always Be Improving</h2>
+           <p class="bodytext">Increase employee/customer engagement through the use of wearable computing. Transform your daily work grind into a game where you win rewards by improving.</p>
+         </div>
+         <div class="span5">
+            <img src="./img/mining.png">
+         </div>
+      </div>
+      <hr class="soften" id="greatnessgame">
+      <div class="row-fluid">
+         <div class="span5 offset1">
+           <h3 class="great"><p id="gtg">GOOD </br>to</br> GREAT</p></h3>
+         </div>
+         <div class="span5">
+           <h2>Gameifying Greatness</h2>
+           <p class="bodytext">Use offline metric data to define greatness. Configure custom rules in order to convert work into a massive multiplayer game.</p>
+         </div>
+      </div>
+      <hr class="soften">
+      <h1><a href="./requestinvite.html">Transforming work into fun.</a></h1>
+      <p class="marketing-byline" id="comingsoon">Coming Soon....</p>
+   </div>
+</div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-links">
+          <li><a href="./contactpage.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery.js"></script>
+    <script src="/js/google-code-prettify/prettify.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/bootstrap-dropdown.js"></script>
+    <script src="/js/bootstrap-scrollspy.js"></script>
+    <script src="/js/bootstrap-button.js"></script>
+    <script src="/js/bootstrap-typeahead.js"></script>
+    <script src="/js/bootstrap-affix.js"></script>
+
+
+  </body>
+</html>

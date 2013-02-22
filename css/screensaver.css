@@ -1,0 +1,32 @@
+.hi {
+   font-family:'Playfair Display SC', serif;
+   font-size:24px;
+   text-align:center;
+   color:white;
+   display:block;
+   position:fixed;
+   top:0px;
+   left:0px;
+   padding-top:5px;
+   padding-left:5px;
+}
+.myname {
+   font-family:'Playfair Display SC', serif;
+   font-size:36px;
+   color:white;
+   padding-top:10px;
+   margin-left:150px;
+}
+.askme {
+   font-family:'Playfair Display SC', serif;
+   font-size:24px;
+   text-align:center;
+   color:white;
+   vertical-align:middle;
+   display:block;
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   padding-bottom:5px;
+   padding-left:5px;
+}

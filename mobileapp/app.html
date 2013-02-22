@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>app</title>
+  <link rel="stylesheet" href="vendor/bootstrap.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body ng-controller="Ctrl" ng-class="{blank: blank}">
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <ul class="nav pull-right" style="z-index: 1">
+        <li><a href="#rewards">Rewards</a></li>
+      </ul>
+      <ul class="nav" style="z-index: 1">
+        <li><a href="#credit">Owow</a></li>
+      </ul>
+      <ul class="nav center">
+        <li><a href="#currency">Currency</a></li>
+      </ul>
+    </div>
+  </div>
+  <ng-view></ng-view>
+  <div class="navbar navbar-fixed-bottom navbar-inverse">
+    <div id="bottom-toolbar" class="navbar-inner">
+      <ul class="nav center">
+        <li><a href="fitness.html">Client Fitness</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="vendor/cordova-2.3.0.js"></script>
+  <script src="vendor/angular.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> 
+  <script src="js/index.js"></script>
+  <script src="js/audio.js"></script>
+</body>
+</html>
